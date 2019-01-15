@@ -1,0 +1,170 @@
+.faq {
+  @include inside-container;
+}
+
+.faq-head {
+  margin-top: 8px;
+  font-size: 28px;
+}
+
+.faq-subhead {
+  width: 288px;
+  margin-top: 35px;
+  color: $order-color;
+  font-family: $font-stack;
+  font-size: 19px;
+  font-weight: $font-bold;
+  line-height: 30.1px;
+
+  &--macket-have {
+    margin-top: 30px;
+  }
+
+  &--macket-no {
+    margin-top: 25px;
+  }
+
+  &--print {
+    margin-top: 32px;
+  }
+
+  &--office {
+    width: 270px;
+  }
+}
+
+.faq p {
+  width: 99.5%;
+  margin-bottom: 0px;
+  color: $article-color;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+.faq__consultation-form {
+  padding-left: 25px;
+  margin-top: 52px;
+  margin-bottom: 84px;
+  position: relative;
+  box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+  border-radius: 10px;
+  background-color: $main-color;
+  background-image: url('../img/faq-consult-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 150% -20%;
+  &::after {
+    right: 5px;
+    top: 19px;
+    position: absolute;
+    content: '?';
+    color: #ffffff;
+    font-family: $font-stack;
+    font-size: 45px;
+    font-weight: $font-bold;
+    line-height: 10.75px;
+  }
+
+  h4 {
+    padding-top: 35px;
+    color: white;
+    font-family: $font-stack;
+    font-weight: $font-light;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30.1px;
+  }
+
+  p {
+    padding-bottom: 18px;
+    width: 190px;
+    color: white;
+    font-family: $font-stack;
+    font-size: 20px;
+    font-weight: $font-bold;
+    line-height: 30.1px;
+  }
+
+  input {
+    width: 230px;
+    color: white;
+    border-bottom: 1px solid white;
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  input[type=submit] {
+    margin-top: 25px;
+    margin-bottom: 56px;
+    border: 0;
+    width: 243px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .faq-head {
+    margin-top: 33px;
+    margin-bottom: 50px;
+  }
+  .faq-subhead {
+    max-width: 388px;
+    width: 100%;
+
+    &--macket-have {
+      margin-top: 30px;
+    }
+
+    &--macket-no {
+      margin-top: 35px;
+    }
+
+    &--print {
+      margin-top: 32px;
+    }
+
+    &--office {
+      max-width: 388px;
+      width: 100%;
+    }
+
+    &--courier {
+      margin-top: 28px;
+    }
+  }
+
+  .faq__consultation-form {
+    margin-bottom: 102px;
+    padding-left: 35px;
+    background-position: 508px -63px;
+    background-size: 241px;
+
+    &::after {
+      right: 76px;
+      top: 39px;
+      font-size: 68px;
+    }
+
+    p {
+      padding-bottom: 27px;
+      width: 390px;
+      font-size: 19px;
+    }
+
+    input {
+      margin-right: 46px;
+      width: 171px;
+      color: white;
+      border-bottom: 1px solid white;
+    }
+
+    input[type=submit] {
+      margin-top: 0px;
+      margin-right: 0;
+      margin-bottom: 52px;
+      border: 0;
+      width: 188px;
+    }
+  }
+}

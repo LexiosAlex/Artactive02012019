@@ -1,0 +1,136 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav_wrapper--hidden {
+  display: none;
+}
+
+.main-nav__list {
+  @include list-unstyling;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 8;
+  right: 26px;
+  top: 35px;
+  visibility: hidden;
+}
+
+.main-nav__toggle--on {
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    visibility: visible;
+    width: 25px;
+    height: 3px;
+    background-color: transparent;
+    border-top: 2px solid $white-color;
+    border-bottom: 2px solid $white-color;
+    padding-top: 5px;
+    padding-bottom: 4px;
+  }
+  &::before {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    content: '';
+    visibility: visible;
+    width: 25px;
+    height: 2px;
+    background-color: $white-color;
+  }
+}
+
+.main-nav__toggle--off {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    visibility: visible;
+    width: 30px;
+    height: 3px;
+    background-color: $menu-active-color;
+    transform: rotate(45deg);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    visibility: visible;
+    width: 30px;
+    height: 3px;
+    background-color: $menu-active-color;
+    transform: rotate(135deg);
+  }
+}
+
+.main-nav__item {
+  display: block;
+  box-shadow: 0 1px 0 $menu-active-color, inset 0 1px 0 $menu-active-color;
+
+  a {
+    display: flex;
+    width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-left: 50px;
+    font-family: $font-stack;
+    font-weight: $font-bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: $menu-active-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
+
+    &:active {
+      color: $link-active-color;
+    }
+  }
+}
+
+.main-nav__contacts {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    right: 42px;
+    top: 39px;
+  }
+
+  .main-nav_wrapper {
+    padding-bottom: 155px;
+    padding-top: 52px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 5;
+    width: 301px;
+    background-color: #ffffff;
+  }
+
+  .main-nav__item {
+    box-shadow: none;
+    width: 75px;
+
+    a {
+      padding-top: 6px;
+      padding-left: 69px;
+      font-size: 13px;
+      line-height: 14px;
+    }
+  }
+}

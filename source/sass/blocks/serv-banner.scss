@@ -1,0 +1,59 @@
+.serv-banner {
+  @include inside-container;
+  padding-bottom: 73px;
+  background-color: $grey-color;
+}
+
+.serv-banner__head {
+  margin: 0;
+  padding: 0;
+  padding-top: 63px;
+}
+
+.serv-banner__subhead {
+  padding-top: 42px;
+  &:after {
+    content: "1";
+  }
+}
+
+.serv-banner__list {
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+.serv-banner__list-item {
+  width: 282px;
+  line-height: 17px;
+  color: $article-color;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+.serv-banner__slider {
+  margin-top: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .serv-banner__head {
+    padding-top: 73px;
+  }
+
+  .serv-banner__subhead {
+    padding-top: 64px;
+  }
+
+  .serv-banner__list {
+    padding-top: 15px;
+  }
+
+  .serv-banner__list-item {
+    width: 500px;
+  }
+  .serv-banner__slider {
+    margin-top: 68px;
+    margin-bottom: 33px;
+  }
+}

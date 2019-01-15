@@ -1,0 +1,48 @@
+.serv-operative {
+  @include inside-container;
+  padding-bottom: 255px;
+  background-color: $grey-color;
+  background-image: url('../img/operative-documents-320px.png');
+  background-repeat: no-repeat;
+  background-position: 60% 101.5%;
+}
+
+.serv-operative__subhead {
+  padding-top: 71px;
+  font-size: 24px;
+  &::after{
+    content: '3';
+    color: #faf8fb;
+  }
+}
+
+.serv-operative p {
+  margin-top: 2px;
+  width: 291px;
+  color: $article-color;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .serv-operative {
+    background-image: url(../img/operative-documents-750px.png);
+    background-size: 453px 381px;
+    background-position: 127% 85.5%;
+  }
+  .serv-operative h3 {
+    padding-top: 105px;
+    margin-top: 35px;
+    font-size: 30px;
+    line-height: 38px;
+    width: 455px;
+  }
+  .serv-operative p {
+    margin-bottom: 0;
+    width: 643px;
+  }
+}
+

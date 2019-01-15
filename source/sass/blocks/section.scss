@@ -1,0 +1,24 @@
+.section__head {
+  margin-top: 34px;
+  line-height: 33px;
+  color: $main-color;
+  font-family: $font-stack;
+  font-size: 30px;
+  font-weight: $font-bold;
+}
+
+.section__subhead {
+  line-height: 27px;
+  color: #383d52;
+  font-family: $font-stack;
+  font-size: 24px;
+  font-weight: $font-normal;
+}
+
+@media (min-width: $tablet-width) {
+  .section__subhead {
+    font-weight: $font-bold;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}

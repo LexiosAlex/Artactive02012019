@@ -1,0 +1,12 @@
+.slider-arrow {
+  height: 100px;
+  background: url('../img/slider-arrow.svg');
+  background-repeat: no-repeat;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}

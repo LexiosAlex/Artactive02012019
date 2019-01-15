@@ -1,0 +1,33 @@
+.about-us {
+  @include inside-container;
+}
+
+.about-us__subhead {
+  margin-bottom: 33px;
+}
+
+.about-us__description {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 25px;
+  line-height: 28px;
+  color: $article-color;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__head {
+    margin-bottom: 47.5px;
+    margin-top: 46px;
+  }
+  .about-us__subhead {
+    margin-bottom: 33px;
+  }
+  .about-us__description {
+    margin-top: 23px;
+    width: 676px;
+  }
+}

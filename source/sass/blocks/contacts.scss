@@ -1,0 +1,76 @@
+.contacts {
+  position: relative;
+  height: 532px;
+  background-color: #eaeaea;
+}
+
+.contacts__card {
+  padding-bottom: 31px;
+  position: absolute;
+  top: 69px;
+  margin-bottom: 100px;
+  margin-left: 15px;
+  width: 290px;
+  box-shadow: 0 23px 32px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  background-color: #ffffff;
+  h3 {
+    padding-left: 39px;
+    font-size: 27px;
+  }
+}
+
+.contacts__card-list {
+  @include list-unstyling;
+  padding-left: 39px;
+  color: $article-color;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: $font-normal;
+}
+
+.contacts-list__item {
+  padding-left: 28px;
+  padding-bottom: 25px;
+  width: 156px;
+  background-repeat: no-repeat;
+
+  &--address {
+    background-position: 0px 3px;
+    background-image: url('../img/map-pin.svg');
+  }
+  &--email {
+    background-position: 0px 2px;
+    background-image: url('../img/contacts-massage.png');
+  }
+  &--phone {
+    background-position: 0px -2px;
+    background-image: url('../img/contacts-phone.png');
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    height: 470px;
+  }
+
+  .contacts__card {
+    padding-bottom: 50px;
+    top: 61px;
+    margin-left: 30px;
+    width: 386px;
+    h3 {
+      margin-top: 63px;
+      padding-left: 59px;
+    }
+  }
+
+  .contacts__card-list {
+    margin-top: 55px;
+    padding-left: 59px;
+  }
+
+  .contacts-list__item {
+    width: 250px;
+  }
+}

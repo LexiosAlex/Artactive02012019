@@ -1,0 +1,133 @@
+.process-info__list {
+  position: relative;
+  @include list-unstyling;
+  @include central-container;
+  width: 300px;
+  padding-top: 620px;
+  padding-bottom: 150px;
+  background-image: url("../img/process-arrows-320px.svg");
+  background-repeat: no-repeat;
+  background-size: 150px 450px;
+  background-position: 68% 36%;
+}
+
+.process-info__item {
+  position: absolute;
+  text-align: center;
+  width: 130px;
+  line-height: 15px;
+  color: $article-color;
+  font-family: $font-stack;
+  font-size: 13px;
+  font-weight: $font-normal;
+  line-height: 18px;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-color: #f0e2ff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.process-info__item--ebook {
+  top: 150px;
+  left: 80px;
+  &:before {
+    bottom: 40px;
+    left: 7.5px;
+    background-image: url("../img/ebook.png");
+  }
+}
+
+.process-info__item--tablet {
+  top: 348px;
+  left: 169px;
+  &:before {
+    bottom: 60px;
+    left: 10px;
+    background-image: url("../img/tablet.png");
+  }
+}
+
+.process-info__item--dcument {
+  top: 442px;
+  left: 0px;
+  &:before {
+    bottom: 77px;
+    left: 6px;
+    background-image: url("../img/document.png");
+  }
+}
+
+.process-info__item--moving {
+  bottom: 53px;
+  right: 88px;
+  &:before {
+    bottom: 42px;
+    left: 6px;
+    background-image: url("../img/moving.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .process-info__list {
+    padding-bottom: 22px;
+    width: 720px;
+    background-image: url("../img/process-arrows-720px.svg");
+    background-size: 500px 278px;
+    background-position: 47.5% 28.5%;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 2px;
+      height: 83px;
+      background-color: #883eca;
+      transform: translate(5%);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 48.5%;
+      bottom: -12px;
+      width: 2px;
+      height: 83px;
+      background-color: #883eca;
+      transform: translate(90%);
+    }
+  }
+  .process-info__item--ebook {
+    top: 165px;
+    left: 179px;
+  }
+
+  .process-info__item--tablet {
+    top: 262px;
+    left: 535px;
+    width: 200px;
+    &:before {
+      bottom: 43px;
+      left: 42px;
+    }
+  }
+
+  .process-info__item--dcument {
+    top: 345px;
+    left: -6px;
+    width: 160px;
+    &:before {
+      bottom: 58px;
+      left: 23px;
+    }
+  }
+
+  .process-info__item--moving {
+    bottom: 143px;
+    right: 209px;
+  }
+}

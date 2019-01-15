@@ -1,0 +1,129 @@
+.reviews-slider {
+  margin-top: 35px;
+  margin-left: 17px;
+  margin-right: 15px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+
+.reviews-slider__slide {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  box-shadow: 0 0 10px rgba(81, 8, 86, 0.08);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.reviews-slider__content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+
+.reviews-slider__avatar {
+  margin-top: 61px;
+  margin-left: 62.5px;
+  margin-bottom: 29px;
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-slider__author {
+  margin-top: 16px;
+  order: 1;
+  color: $order-color;
+  font-family: $font-stack;
+  font-size: 15.5px;
+  font-weight: $font-bold;
+  line-height: 30.1px;
+  font-style: normal;
+}
+
+.reviews-slider__text {
+  width: 255px;
+  color: $article-color;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+.reviews-slider__feedback {
+  margin-bottom: 49px;
+  order: 2;
+  a {
+    color: #3594dd;
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: $font-bold;
+    line-height: 30.1px;
+    font-style: normal;
+    text-decoration: none;
+  }
+}
+
+.reviews-slider__arrow-left {
+  background-position: 51% 42%;
+}
+
+.reviews-slider__arrow-right {
+  transform: rotate(180deg);
+  background-position: 61% 56.5%;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-slider {
+    margin-top: 26px;
+    margin-left: 31px;
+    margin-right: 31px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .reviews-slider__avatar {
+    margin-top: 60px;
+  }
+
+  .reviews-slider__text {
+    margin: 0;
+    margin-top: 55px;
+    width: 424px;
+  }
+
+  .reviews-slider__author {
+    margin-top: 8px;
+  }
+
+  .reviews-slider__feedback {
+    margin-bottom: 46px;
+  }
+
+  .reviews-slider__content {
+    grid-template-columns: auto 500px;
+    grid-template-rows: auto;
+  }
+  .reviews__item {
+    margin-left: 31px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .reviews-slider__arrow-left {
+    width: 130px;
+    background-position: -5% 49.5%;
+  }
+
+  .reviews-slider__arrow-right {
+    width: 130px;
+    background-position: 96% 50%;
+  }
+}

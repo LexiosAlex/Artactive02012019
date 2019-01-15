@@ -1,0 +1,31 @@
+.main-btn {
+  z-index: 1;
+  padding: 14px 0;
+  border-radius: 50px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 19px;
+  background-color: $btn-color;
+  color: $white-color;
+  font-family: $font-stack;
+  font-size: 16px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.57px;
+  &:hover,
+  &:focus {
+    margin: 0;
+    color: $white-color;
+    background-color: $link-hover-color;
+    border: 2px solid $link-hover-color;
+  }
+
+  &:active {
+    margin: 0;
+    padding-left: -2px;
+    color: $btn-active-color;
+    background-color: $link-hover-color;
+    border: 2px solid $link-hover-color;
+  }
+}

@@ -1,0 +1,106 @@
+.consultation-form {
+  @include inside-container;
+  background-color: $grey-color;
+}
+
+.consultation-form h4 {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  color: $order-color;
+  font-family: $font-stack;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30.1px;
+}
+
+.consultation-form p {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 26px;
+  width: 185px;
+  color: $order-color;
+  font-family: $font-stack;
+  font-size: 20px;
+  font-weight: $font-bold;
+  line-height: 30.1px;
+}
+
+.consultation-form__input {
+  margin-bottom: 16px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #868995;
+  width: 96%;
+  &::placeholder {
+    color: #868995;
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: $font-bold;
+    font-style: italic;
+    line-height: 24px;
+  }
+}
+
+.consultation-form__btn {
+  margin: 2px;
+  margin-bottom: 61px;
+  border: none;
+  &:hover,
+  &:focus,
+  &:active {
+    margin-bottom: 59px;
+  }
+}
+
+.consultation-form--operative {
+  h4 {
+    padding-top: 41px;
+  }
+  p {
+    padding-bottom: 16px;
+  }
+  .consultation-form__btn {
+    margin: 2px;
+    margin-top: 18px;
+    margin-bottom: 61px;
+    border: none;
+    &:hover,
+    &:focus,
+    &:active {
+      margin-top: 20px;
+      margin-bottom: 59px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .consultation-form--operative {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: auto;
+    background-image: url("../img/paper-plane-750px.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 236px 78px;
+    background-size: 123px 258px;
+    h4 {
+      padding-top: 67px;
+    }
+    .consultation-form__btn {
+      margin-bottom: 118px;
+      width: 240px;
+      &:hover,
+      &:focus,
+      &:active {
+        margin-bottom: 116px;
+      }
+    }
+  }
+  .consultation-form__input {
+    width: 228px;
+  }
+}

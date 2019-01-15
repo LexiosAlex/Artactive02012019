@@ -1,0 +1,110 @@
+.land-screen {
+  position: relative;
+  @include inside-container;
+  background-color: $main-color;
+  background-image: url('../img/illustration-header-320px.png');
+  background-position: -31px -14px;
+  background-size: 106%;
+  background-repeat: no-repeat;
+
+  &::before {
+    z-index: -1;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 322px;
+    background-image: url('../img/landing-gradient.svg');
+    background-repeat: no-repeat;
+    opacity: 0.57;
+  }
+}
+
+.land-screen__slogan {
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+  padding-top: 318px;
+  width: 225px;
+  line-height: 42px;
+  color: $white-color;
+  font-family: $font-stack;
+  font-size: 36px;
+  font-weight: $font-extrabold;
+  text-transform: uppercase;
+  letter-spacing: 1.06px;
+}
+
+.land-screen__description {
+  margin-bottom: 45px;
+  margin-top: 30px;
+  z-index: 3;
+  width: 290px;
+  line-height: 24px;
+  color: $white-color;
+  font-family: $font-stack;
+  font-size: 20px;
+  font-weight: $font-normal;
+}
+
+.land-screen__devilery-about {
+  z-index: 3;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 67px;
+  width: 210px;
+  line-height: 19px;
+  color: $white-color;
+  font-family: $font-stack;;
+  font-size: 16px;
+  font-weight: $font-normal;
+}
+
+.land-screen__btn {
+  margin-bottom: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .land-screen {
+    padding-top: 15px;
+    padding-left: 468px;
+    display: grid;
+    grid-template-rows: auto;
+    background-image: url(../img/land-screen750px.png);
+    background-size: 546px 466px;
+    background-position: -91px 15px;
+    &::after {
+      z-index: 1;
+      position: absolute;
+      content: '';
+      bottom: 40px;
+      left: 50%;
+      width: 19px;
+      height: 31px;
+      background-image: url('../img/landscreen-mouse.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translate(-50%);
+    }
+  }
+  .land-screen__slogan {
+    padding-top: 30px;
+    line-height: 52px;
+    font-size: 45px;
+    width: 280px;
+  }
+  .land-screen__description {
+    margin-top: 40px;
+    margin-bottom: 39px;
+  }
+  .land-screen__btn {
+    width: 245px;
+  }
+  .land-screen__devilery-about {
+    padding-bottom: 92px;
+    padding-top: 22px;
+    padding-left: 2px;
+  }
+}

@@ -1,0 +1,9 @@
+body {
+  font-family: $font-stack;
+  background-color: $white-color;
+  min-width: $mobile-width;
+}
+
+a {
+  cursor: pointer;
+}

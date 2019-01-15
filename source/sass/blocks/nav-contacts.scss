@@ -1,0 +1,43 @@
+@media (min-width: $tablet-width) {
+  .nav-contacts {
+    display: block;
+  }
+
+  .nav-contacts__phone {
+    padding-top: 54px;
+    padding-left: 68px;
+    color: $main-font-color;
+    font-family: $font-stack;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .nav-contacts__order {
+    margin-top: 14px;
+    margin-left: 68px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 21px;
+    display: inline-block;
+    color: $btn-color;
+    font-family: $font-stack;
+    font-size: 11px;
+    font-weight: $font-extrabold;
+    text-transform: uppercase;
+    letter-spacing: 0.55px;
+    border-radius: 17px;
+    border: 2px solid $btn-color;
+    &:hover,
+    &:focus {
+      background-color: $btn-color;
+    }
+    &:active {
+      color: $main-font-color;
+    }
+  }
+}
+

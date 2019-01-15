@@ -1,0 +1,68 @@
+.addition-questions {
+  margin-top: 21px;
+  color: $white-color;
+  box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+  border-radius: 10px;
+  background-color: $main-color;
+  h3{
+    padding: 0;
+    margin: 0;
+    padding-left: 24px;
+    padding-top: 26px;
+    font-family: $font-stack;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 24px;
+    font-weight: $font-light;
+  }
+  p{
+    padding: 0;
+    margin: 0;
+    padding-left: 24px;
+    padding-top: 2px;
+    padding-bottom: 34px;
+  }
+}
+
+.addition-questions__btn {
+  margin-bottom: 30px;
+  margin-left: 24px;
+  width: 84%;
+  &:active,
+  &:focus,
+  &:hover {
+    margin-left: 22px;
+    margin-bottom: 26px;
+    width: 84%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .addition-questions {
+    display: grid;
+    grid-template-columns: 150px auto auto;
+    h3 {
+      padding-top: 45px;
+      padding-left: 39px;
+      padding-bottom: 48px;
+      display: inline-block;
+    }
+    p {
+      padding-left: 17px;
+      padding-top: 48px;
+    }
+  }
+  .addition-questions__btn {
+    margin-top: 34px;
+    margin-left: 45px;
+    width: 249px;
+    height: 20px;
+    &:active,
+    &:focus,
+    &:hover {
+      margin-top: 32px;
+      margin-left: 38px;
+      width: 249px;
+    }
+  }
+}

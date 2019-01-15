@@ -1,0 +1,39 @@
+.main-header {
+  background-color: $main-color;
+  padding-top: 20px;
+}
+
+.main-header--menu-active {
+  background-color: $white-color;
+}
+
+
+.main-header__logo p {
+  @include inside-container;
+  margin: 0;
+  padding-bottom: 20px;
+  width: 107px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: $font-stack;
+  font-size: 18px;
+  font-weight: $font-extrabold;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.main-header__logo--menu-active p {
+  color: $menu-active-color;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header{
+    background-color: $main-color;
+  }
+
+  .main-header__logo p {
+    color: $white-color;
+    padding-left: 29px;
+    padding-top: 2px;
+  }
+}
