@@ -1,6 +1,7 @@
 .main-header {
-  background-color: $main-color;
+  margin-bottom: -1px;
   padding-top: 20px;
+  background-color: $main-color;
 }
 
 .main-header--menu-active {
@@ -36,4 +37,16 @@
     padding-left: 29px;
     padding-top: 2px;
   }
+}
+
+@media (min-width: $desctop-width) {
+   .main-header{
+      padding-top: 62px;
+      display: flex;
+   }
+
+   .main-header__logo p {
+      padding-right: 85px;
+      padding-left: 19px;
+   }
 }

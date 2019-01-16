@@ -41,3 +41,20 @@
   }
 }
 
+@media (min-width: $desctop-width) {
+  .main-nav__contacts {
+    display: flex;
+  }
+  .nav-contacts__phone {
+    margin: 0;
+    padding-left: 66px;
+    padding-right: 34px;
+    padding-top: 8px;
+    color: #ffffff;
+  }
+  .nav-contacts__order {
+    margin: 0;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}

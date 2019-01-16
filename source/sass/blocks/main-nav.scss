@@ -140,13 +140,32 @@
     display: none;
   }
   .main-nav__wrapper {
+    padding: 0;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     position: static;
     width: 100%;
   }
   .main-nav__list {
+    padding-top: 4px;
     display: flex;
     flex-direction: row;
+  }
+
+  .main-nav__item {
+    width: auto;
+    a {
+      padding-bottom: 0;
+      padding-left: 50px;
+      color: #ffffff;
+      letter-spacing: 0.65px;
+    }
+  }
+  .main-nav__item--reviews a{
+    padding-left: 56px;
+  }
+  .main-nav__item--faq a{
+    padding-left: 56px;
   }
 }
