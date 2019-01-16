@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.main-nav_wrapper--hidden {
+.main-nav__wrapper--hidden {
   display: none;
 }
 
@@ -111,7 +111,7 @@
     top: 39px;
   }
 
-  .main-nav_wrapper {
+  .main-nav__wrapper {
     padding-bottom: 155px;
     padding-top: 52px;
     top: 0;
@@ -132,5 +132,21 @@
       font-size: 13px;
       line-height: 14px;
     }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: 100%;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
   }
 }
