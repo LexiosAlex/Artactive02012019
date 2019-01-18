@@ -57,3 +57,17 @@
     margin-bottom: 33px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .serv-banner {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+  }
+  .serv-banner__slider {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 2;
+  }
+}
+

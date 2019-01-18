@@ -81,25 +81,25 @@
     background-image: url("../img/process-arrows-720px.svg");
     background-size: 500px 278px;
     background-position: 47.5% 28.5%;
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      width: 2px;
-      height: 83px;
-      background-color: #883eca;
-      transform: translate(5%);
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      left: 48.5%;
-      bottom: -12px;
-      width: 2px;
-      height: 83px;
-      background-color: #883eca;
-      transform: translate(90%);
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   left: 50%;
+    //   width: 2px;
+    //   height: 83px;
+    //   background-color: #883eca;
+    //   transform: translate(5%);
+    // }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: 48.5%;
+    //   bottom: -12px;
+    //   width: 2px;
+    //   height: 83px;
+    //   background-color: #883eca;
+    //   transform: translate(90%);
+    // }
   }
   .process-info__item--ebook {
     top: 165px;
@@ -129,5 +129,34 @@
   .process-info__item--moving {
     bottom: 143px;
     right: 209px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .process-info__list {
+    width: 584px;
+    max-height: 642px;
+    background-image: url("../img/process-arrows-1170px.svg");
+    background-size: 350px 270px;
+    background-position: 92px 181px;
+  }
+
+  .process-info__item--ebook {
+    top: 230px;
+    left: 179px;
+  }
+
+  .process-info__item--tablet {
+    top: 371px;
+    left: 353px;
+  }
+
+  .process-info__item--dcument {
+    top: 410px;
+  }
+
+  .process-info__item--moving {
+    bottom: 46px;
+    left: 218px;
   }
 }

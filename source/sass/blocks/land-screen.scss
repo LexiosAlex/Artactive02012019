@@ -108,3 +108,44 @@
     padding-left: 2px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .land-screen {
+    padding-bottom: 215px;
+    padding-left: 642px;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    background-size: 647px 548px;
+    background-position: -90px 86px;
+    }
+
+  .land-screen__slogan {
+    padding-top: 107px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    line-height: 75px;
+    font-size: 60px;
+    letter-spacing: 1.76px;
+    width: 319px;
+  }
+
+  .land-screen__description {
+    margin-bottom: 79px;
+    width: 450px;
+    line-height: 38px;
+    font-size: 32px;
+    font-weight: 400;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .land-screen__devilery-about {
+    padding: 0;
+    padding-left: 8px;
+  }
+
+  .land-screen::after {
+    bottom: 69px;
+    left: 50.3%;
+  }
+}
