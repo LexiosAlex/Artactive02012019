@@ -66,3 +66,44 @@
     }
   }
 }
+
+@media (min-width: $desctop-width) {
+  .addition-questions {
+    margin-top: 56px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 50% 50%;
+    width: 475px;
+    h3 {
+      padding: 0;
+      padding-top: 32px;
+      padding-left: 39px;
+      grid-column-start: 1;
+    }
+    p {
+      padding: 0;
+      padding-left: 38px;
+      grid-column-start: 1;
+      font-size: 17px;
+      line-height: 18px;
+    }
+    .addition-questions__btn {
+      margin-top: 33px;
+      margin-left: 5px;
+      margin-bottom: 35px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      width: 170px;
+      height: 20px;
+      &:active,
+      &:focus,
+      &:hover {
+      margin-top: 31px;
+      margin-left: 3px;
+      margin-bottom: 33px;
+      width: 170px;
+      }
+    }
+  }
+}

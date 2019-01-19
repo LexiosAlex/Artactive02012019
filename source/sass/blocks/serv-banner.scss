@@ -60,14 +60,29 @@
 
 @media (min-width: $desctop-width) {
   .serv-banner {
+    padding-right: 9px;
+    padding-bottom: 76px;
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 571px auto;
   }
   .serv-banner__slider {
+    margin-top: 207px;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 6;
     grid-column-start: 2;
+  }
+  .serv-banner__head {
+    padding-top: 100px;
+  }
+  .serv-banner__subhead {
+    padding: 0;
+    padding-top: 74.5px;
+    width: 400px;
+    line-height: 38px;
+  }
+  .serv-banner__list {
+    padding-top: 50px;
   }
 }
 
