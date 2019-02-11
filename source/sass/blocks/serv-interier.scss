@@ -44,14 +44,14 @@
     background-repeat: no-repeat;
     background-position: 260px 64%;
     &::after {
-    content: "";
-    position: absolute;
-    left: 50.5%;
-    bottom: -100px;
-    width: 2px;
-    height: 83px;
-    background-color: #883eca;
-    transform: translate(20%);
+      content: "";
+      position: absolute;
+      left: 50.5%;
+      bottom: -100px;
+      width: 2px;
+      height: 83px;
+      background-color: #883eca;
+      transform: translate(20%);
     }
     &::before {
       content: "";
@@ -82,6 +82,57 @@
     &:focus,
     &:active {
       margin-top: 31px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .serv-interier {
+    padding-bottom: 282px;
+    background: url('../img/interier-serv-bg1170p.jpg');
+    background-size: 1247px 760px;
+    background-repeat: no-repeat;
+    background-position: 119px 69px;
+    &::after {
+      left: 50.3%;
+    }
+    &::before {
+      left: 49.8%;
+    }
+  }
+  .serv-interier .container {
+    @include central-container;
+    max-width: 1170px;
+  }
+
+  .serv-interier__subhead {
+    margin-top: 59px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: 170px;
+    &:after {
+      left: -75px;
+    }
+  }
+
+  .serv-interier p {
+    margin-left: auto;
+    margin-right: 16px;
+    margin-top: 22px;
+  }
+
+  .serv-interier__btn {
+    display: block;
+    margin-left: auto;
+    margin-top: 59px;
+    width: 240px;
+    margin-right: 328px;
+    &:hover,
+    &:focus,
+    &:active {
+      margin-left: auto;
+      margin-top: 57px;
+      margin-right: 326px;
     }
   }
 }

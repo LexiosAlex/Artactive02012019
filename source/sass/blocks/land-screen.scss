@@ -1,13 +1,16 @@
 .land-screen {
-  position: relative;
-  @include inside-container;
+  @include central-container;
   background-color: $main-color;
+}
+
+.land-screen .container {
+  @include inside-container;
+  position: relative;
   background-image: url('../img/illustration-header-320px.png');
   background-position: -31px -14px;
   background-size: 106%;
   background-repeat: no-repeat;
-
-  &::before {
+    &::before {
     z-index: -1;
     position: absolute;
     content: '';
@@ -20,6 +23,7 @@
     opacity: 0.57;
   }
 }
+
 
 .land-screen__slogan {
   z-index: 3;
@@ -68,13 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .land-screen {
-    padding-top: 15px;
-    padding-left: 468px;
-    display: grid;
-    grid-template-rows: auto;
-    background-image: url(../img/land-screen750px.png);
-    background-size: 546px 466px;
-    background-position: -91px 15px;
+    position: relative;
     &::after {
       z-index: 1;
       position: absolute;
@@ -89,6 +87,18 @@
       transform: translate(-50%);
     }
   }
+
+  .land-screen .container {
+    padding-top: 20px;
+    padding-left: 468px;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    background-image: url(../img/land-screen750px.png);
+    background-size: 546px 466px;
+    background-position: -91px 15px;
+  }
+
   .land-screen__slogan {
     padding-top: 30px;
     line-height: 52px;
@@ -110,14 +120,17 @@
 }
 
 @media (min-width: $desctop-width) {
-  .land-screen {
+  .land-screen .container {
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 215px;
     padding-left: 642px;
+    max-width: 520px;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
     background-size: 647px 548px;
     background-position: -90px 86px;
-    }
+  }
 
   .land-screen__slogan {
     padding-top: 107px;

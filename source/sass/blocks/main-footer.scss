@@ -27,7 +27,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer {
+  .main-footer .container {
     display: flex;
 
     a {
@@ -45,5 +45,18 @@
     padding-left: 30px;
     padding-top: 23px;
     padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-footer .container {
+    @include central-container;
+    max-width: 1170px;
+  }
+
+  .main-footer__copyright {
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-bottom: 17px;
   }
 }

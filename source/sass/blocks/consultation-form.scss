@@ -61,6 +61,7 @@
     padding-top: 41px;
   }
   p {
+    font-size: 19px;
     padding-bottom: 16px;
   }
   .consultation-form__btn {
@@ -102,5 +103,43 @@
   }
   .consultation-form__input {
     width: 228px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .consultation-form--operative {
+    padding-bottom: 158px;
+    grid-template-columns: 280px 286px auto;
+    background-image: url("../img/paper-plane-1170px.png");
+    background-repeat: no-repeat;
+    background-size: 503px 341px;
+    background-position: 772px -65px;
+    h4 {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      padding-top: 107px;
+    }
+    p {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      width: 400px;
+    }
+    .consultation-form__btn {
+      margin: 0;
+      margin-top: 10px;
+      width: 195px;
+      &:hover,
+      &:focus,
+      &:active {
+        margin-top: 6px;
+        margin-bottom: 0px;
+      }
+    }
+    .consultation-form__input {
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 4px;
+      width: 228px;
+    }
   }
 }

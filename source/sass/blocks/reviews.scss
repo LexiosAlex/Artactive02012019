@@ -2,11 +2,37 @@
   display: none;
 }
 
+.reviews__item {
+  margin: 0;
+  padding: 0;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: $tablet-width) {
   .reviews__head{
     padding-bottom: 36px;
     padding-top: 35px;
     padding-left: 30px;
     display: block;
+  }
+  .reviews__item {
+    margin-left: 31px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .reviews .container {
+    @include central-container;
+    max-width: 1170px;
+  }
+
+  .reviews__head{
+    padding-top: 95px;
+    padding-left: 16px;
+    padding-bottom: 50px;
   }
 }

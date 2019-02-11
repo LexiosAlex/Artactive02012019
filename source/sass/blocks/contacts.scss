@@ -74,3 +74,31 @@
     width: 250px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .contacts .container {
+    @include central-container;
+    max-width: 1170px;
+  }
+
+  .contacts {
+    height: 652px;
+  }
+
+  .contacts__card {
+    padding-bottom: 95px;
+    top: 120px;
+    margin-left: 15px;
+    width: 458px;
+    h3 {
+      margin-top: 82px;
+      padding-left: 89px;
+      font-size: 28px;
+    }
+  }
+
+  .contacts__card-list {
+    margin-top: 55px;
+    padding-left: 88px;
+  }
+}

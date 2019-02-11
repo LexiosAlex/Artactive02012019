@@ -32,3 +32,10 @@
     font-weight: $font-bold;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .services-subhead:after {
+    line-height: 202px;
+    font-size: 200px;
+  }
+}

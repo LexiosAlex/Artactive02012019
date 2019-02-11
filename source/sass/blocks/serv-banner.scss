@@ -1,7 +1,10 @@
 .serv-banner {
+  background-color: $grey-color;
+}
+
+.serv-banner .container {
   @include inside-container;
   padding-bottom: 73px;
-  background-color: $grey-color;
 }
 
 .serv-banner__head {
@@ -53,21 +56,25 @@
     width: 500px;
   }
   .serv-banner__slider {
-    margin-top: 68px;
+    margin-top: 71px;
     margin-bottom: 33px;
   }
 }
 
 @media (min-width: $desctop-width) {
-  .serv-banner {
+  .serv-banner .container {
+    @include central-container;
+    padding-left: 39px;
     padding-right: 9px;
     padding-bottom: 76px;
+    max-width: 1170px;
     display: grid;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: 571px auto;
   }
   .serv-banner__slider {
     margin-top: 207px;
+    width: 570px;
     grid-row-start: 1;
     grid-row-end: 6;
     grid-column-start: 2;

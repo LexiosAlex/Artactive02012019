@@ -40,13 +40,20 @@
 }
 
 @media (min-width: $desctop-width) {
-   .main-header{
-      padding-top: 62px;
-      display: flex;
-   }
+  .main-header {
+    padding-top: 0;
+  }
 
-   .main-header__logo p {
-      padding-right: 85px;
-      padding-left: 19px;
-   }
+  .main-header .container{
+    padding-top: 62px;
+    max-width: 1170px;
+    @include central-container;
+    display: flex;
+  }
+
+  .main-header__logo p {
+    padding-top: 4px;
+    padding-right: 85px;
+    padding-left: 16px;
+  }
 }

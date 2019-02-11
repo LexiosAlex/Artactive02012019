@@ -41,8 +41,33 @@
     width: 455px;
   }
   .serv-operative p {
+    margin-top: 7px;
     margin-bottom: 0;
     width: 643px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .serv-operative {
+    background-image: url(../img/operative-documents-1170px.png);
+    background-size: 648px 544px;
+    background-position: 980px -8px;
+  }
+
+  .serv-operative .container {
+    @include central-container;
+    padding-left: 30px;
+    max-width: 1170px;
+  }
+
+  .serv-operative h3 {
+    padding-top: 135px;
+    padding-bottom: 50px;
+  }
+
+  .serv-operative p {
+    width: 563px;
+  }
+}
+
 
